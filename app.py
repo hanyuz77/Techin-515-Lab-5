@@ -9,7 +9,9 @@ import streamlit as st
 from dotenv import load_dotenv
 from supabase import create_client
 
-load_dotenv()
+import streamlit as st
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 CATEGORIES = ("IT", "Makerspace")
 LOCATIONS = ("IT shop", "Makerspace")
